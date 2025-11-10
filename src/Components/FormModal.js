@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const FormModal = ( { setModalOpen } ) => {
+const FormModal = ({ setModalOpen }) => {
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -46,9 +46,9 @@ const FormModal = ( { setModalOpen } ) => {
   };
 
   const handleOutsideClick = (e) => {
-    if (e.target.classList.contains("modal")) {
-      setModalOpen(false);
-    }
+    // if (e.target.classList.contains("modal")) {
+    setModalOpen(false);
+    // }
   };
 
   return (
