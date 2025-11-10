@@ -46,9 +46,10 @@ const FormModal = ({ setModalOpen }) => {
   };
 
   const handleOutsideClick = (e) => {
-    // if (e.target.classList.contains("modal")) {
-    setModalOpen(false);
-    // }
+    if (e.target.classList.contains("container")) {
+      console.log(e.target.classList);
+      setModalOpen(false);
+    }
   };
 
   return (
