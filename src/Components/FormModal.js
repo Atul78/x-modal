@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const FormModal = ({ setModalOpen }) => {
+const FormModal = ( { setModalOpen } ) => {
   const [formData, setFormData] = useState({
     username: "",
     email: "",
